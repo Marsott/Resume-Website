@@ -21,6 +21,7 @@ body {
   overflow: hidden;
 }
 
+/* Sidebar */
 .sidebar {
   background-color: #fafafa;
   border-bottom: 2px solid #e2e2e2;
@@ -70,6 +71,7 @@ body {
   margin-bottom: 6px;
 }
 
+/* Main */
 .main-content {
   padding: 30px;
 }
@@ -95,20 +97,59 @@ body {
   font-size: 1.35rem;
 }
 
+/* Entries in classic layout */
 .entry {
-  margin-bottom: 18px;
+  display: block;
+  margin-bottom: 20px;
 }
 
+.entry-date {
+  display: block;
+  background: none;
+  color: #666;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 0;
+  border-radius: 0;
+  width: auto;
+  white-space: normal;
+  margin-bottom: 4px;
+}
+
+.entry-content {
+  display: block;
+}
+
+.entry-content h3,
 .entry h3 {
   color: #34495e;
   margin-bottom: 4px;
   font-size: 1.05rem;
 }
 
-.entry p {
-  margin-bottom: 4px;
+.entry-subtitle {
+  color: #444;
+  font-size: 0.98rem;
+  margin-bottom: 6px;
 }
 
+.entry-description {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.entry-description li {
+  background: none;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  margin-bottom: 5px;
+  color: #222;
+  line-height: 1.6;
+  text-align: left;
+}
+
+/* Desktop */
 @media (min-width: 900px) {
   .cv-container {
     display: grid;
@@ -122,6 +163,7 @@ body {
   }
 }
 
+/* Mobile */
 @media (max-width: 768px) {
   body {
     padding: 12px;
